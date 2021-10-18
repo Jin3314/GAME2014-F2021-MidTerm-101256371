@@ -103,13 +103,13 @@ public class PlayerController : MonoBehaviour
         // check up bounds
         if (transform.position.y >= verticalBoundary)
         {
-            transform.position = new Vector3(verticalBoundary, transform.position.x, 0.0f);
+            transform.position = new Vector3(transform.position.x, verticalBoundary, 0.0f);
         }
 
         // check down bounds
         if (transform.position.y <= -verticalBoundary)
         {
-            transform.position = new Vector3(-verticalBoundary, transform.position.x, 0.0f);
+            transform.position = new Vector3(transform.position.x, -verticalBoundary, 0.0f);
         }
 
     }
