@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalSpeed: 4
-  horizontalBoundary: 2
+  horizontalBoundary: 3.5
   bulletManager: {fileID: 0}
   damage: 0
 --- !u!50 &9020430152687007726
