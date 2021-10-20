@@ -3,7 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
+/* 
+ PlayerController Script
+ Yeongjin Lim
+ 101256371
+ Last modified in: 2021-10-19
+ Script for Player Control
+ changed tom's code to landscape orientation.
+ */
 
+//class for player control
 public class PlayerController : MonoBehaviour
 {
     public BulletManager bulletManager;
@@ -31,7 +40,7 @@ public class PlayerController : MonoBehaviour
         m_rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // Updates player's move, bound, and bullet
     void Update()
     {
         _Move();
@@ -39,6 +48,7 @@ public class PlayerController : MonoBehaviour
         _FireBullet();
     }
 
+    //function for firing
      private void _FireBullet()
     {
         // delay bullet firing 
@@ -48,6 +58,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //function for move up and down
     private void _Move()
     {
         float direction = 0.0f;
@@ -98,6 +109,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //checks player's bound
     private void _CheckBounds()
     {
         // check up bounds
